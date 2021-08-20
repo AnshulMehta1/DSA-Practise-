@@ -11,6 +11,7 @@ public class maxofArray {
             
         }
         System.out.println(max(array));
+        System.out.println(maxRange(array));
         sc.close();
 
     }
@@ -22,6 +23,17 @@ public class maxofArray {
             }
         }     
         return max;    
+    }
+//     This can find the Maximum value between a given range as well
+        public static int maxRange(int arr[],int startI, int endI){
+        int max=arr[startI];
+        for (int i=startI;i<endI;i++){
+            if (arr[i]>max){
+                max=arr[i];
+            }
+
+        }
+        return max;
     }
  
 }
