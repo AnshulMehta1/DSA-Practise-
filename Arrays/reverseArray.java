@@ -1,4 +1,4 @@
-
+// This is the two pointer method with one pointer at start and one at final index of the array
 import java.util.*;
 import java.io.*;
 public class reverseArray {
