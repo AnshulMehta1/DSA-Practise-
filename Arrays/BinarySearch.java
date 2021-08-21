@@ -4,9 +4,9 @@ import java.io.*;
 import java.io.*;
 public class BinarySearch {
     public static void main(String[] args){
-        int[] arr={27,56,45,12,9,8,99,747,66,333};
+        int[] arr={1,12,22,32,42,52,62,72};
         // Initializing the array 
-        System.out.println(binarySearch(arr,66));
+        System.out.println(binarySearch(arr,12));
         
         //  Make the call of the Binary Search Function
     }
