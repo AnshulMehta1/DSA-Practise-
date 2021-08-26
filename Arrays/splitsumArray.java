@@ -7,6 +7,7 @@ public class splitsumArray {
         int ans=splitArray(arr,m);
         System.out.println(ans);
 
+        
     }
     public static int splitArray(int[] arr, int m){
         int start=0;
