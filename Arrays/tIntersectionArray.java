@@ -39,3 +39,39 @@ public class IntersectionArray {
     }
     
 }
+
+// class Solution {
+//     public int[] intersection(int[] nums1, int[] nums2) {
+//         int n=nums1.length;
+//         int m=nums2.length;
+//         Arrays.sort(nums1);
+//         Arrays.sort(nums2);
+//         ArrayList<Integer> list=new ArrayList<>();
+//         int max=0;
+//         int start=0;
+//         int end=0;
+//         while(start<nums1.length && end <nums2.length){
+//             if(nums1[start]==nums2[end] && nums1[start]>max) {
+//              max=nums1[start];
+//              list.add(nums1[start]);
+//              start++;
+//              end++;
+//          }
+//          else if(nums1[start]>nums2[end])
+//          {
+//              end++;
+//          }
+//          else
+//          {
+//              start++;
+//          }
+//         }
+//          int[] ans= new int[list.size()];
+//          for(int i=0;i<list.size();i++){
+//             ans[i]=list.get(i);
+//     }
+    
+//     return ans;
+        
+//     }
+// }
