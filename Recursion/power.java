@@ -9,14 +9,35 @@ public class power {
 
     }
 
-    public static int power(int base, int powerRaised){
-        if (powerRaised != 0) {
-
-            // recursive call to power()
-            return (base * power(base, powerRaised - 1));
-          }
-          else {
-            return 1;
-          }
+ class Solution {
+    public double myPow(double x, int n) {
+         if (x==0){
+            return 0; // 0 waalo edge case
+        }
+        else if (n>=0){
+            return pow1(x,n); // Simple case 
+        }
+        else{
+           return pow1(1/x,n); //will return 1/x^n
+                                // ahiya 1/n athva -n e walo edge case pan cover thai jase
+        }
+        
+        
     }
+  // aa aapdu recursive function
+    public double pow1(double x,int n){
+        if(n==0){
+            return 1;
+        }
+        else if(n%2==0){
+            double a= pow1(x,n/2); ///
+            return a*a;
+        }else{
+            double a=pow1(x,n/2);
+            return x*a*a;
+        }
+    
+        
+    }
+}
 }
