@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 public class power {
     public static void main(String[] args){
-        int base = 3;
+        double base = 3;
         int powerRaised = 4;
         int result = power(base, powerRaised);
         System.out.println(result);
