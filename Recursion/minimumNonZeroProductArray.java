@@ -1,16 +1,17 @@
 class Solution {
     public int mod = 1_000_000_007;
+//     Answer is to be returned with modulo 10^7
     public int minNonZeroProduct(int p) {
         
         if (p == 1) {
             return 1;
         }
-        long mx = (long)(Math.pow(2, p)) - 1; // The max 
-        long sm = mx - 1; 
-        long n = sm/2; 
-        long sum = rec(sm, n);
+        long max = (long)(Math.pow(2, p)) - 1; // The max 
+        long sum = max - 1; 
+        long n = sum/2; 
+        long sumf = rec(sm, n); // recursive call 
         
-        return (int)(sum * (mx % mod) % mod); 
+        return (int)(sumf * (max % mod) % mod); 
     }
     
     public long rec(long val, long n) {
