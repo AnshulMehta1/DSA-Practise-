@@ -16,8 +16,7 @@ public static boolean sumGame(String num) {
         if ((leftEmpty + rightEmpty) % 2 == 1) return true;
 //            Since both the players are playing optimally, assume the extreme case where:
 //                  alice place 9 on left then bob places 9 on right and visa-versa. Till left and right empty is same.
-//                  And in the left\right over: (right-left) or (left-right)
-//                      alice always places 9 and since bob has to match he is playing safe by keeping 0's.
+
         if (leftEmpty < rightEmpty) {
             int diff = (rightEmpty - leftEmpty) / 2;
             rightSum += 9 * diff;
