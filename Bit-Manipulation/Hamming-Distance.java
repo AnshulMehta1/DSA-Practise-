@@ -7,6 +7,7 @@ class Solution {
             ham = ham & (ham-1);
             count++;
         }
+        
         return count;
         
     }
